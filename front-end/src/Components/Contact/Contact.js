@@ -55,7 +55,7 @@ class Contact extends Component {
           toastNotify.successMessage,
           toastNotify.timer
         );
-        // this.resetForm();
+        this.resetForm();
       } else if (response.data.msg === "fail") {
         alert("Message failed to send.");
         NotificationManager.error(
