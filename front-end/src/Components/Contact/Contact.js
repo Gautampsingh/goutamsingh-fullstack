@@ -25,6 +25,7 @@ class Contact extends Component {
       email: "",
       phone: "",
       message: "",
+      loading: false,
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -36,6 +37,7 @@ class Contact extends Component {
   handleSubmit(e) {
     e.preventDefault();
     const { name, email, phone, message } = this.state;
+    this.setState({ loading: true });
 
     axios({
       method: "POST",
@@ -48,8 +50,8 @@ class Contact extends Component {
       },
     }).then((response) => {
       if (response.data.msg === "success") {
+        this.setState({ loading: false });
         // alert("Message Sent.");
-        // success notification bar
         NotificationManager.success(
           toastNotify.thankyouMessage,
           toastNotify.successMessage,
@@ -57,6 +59,7 @@ class Contact extends Component {
         );
         this.resetForm();
       } else if (response.data.msg === "fail") {
+        this.setState({ loading: false });
         alert("Message failed to send.");
         NotificationManager.error(
           toastNotify.errorMessage,
