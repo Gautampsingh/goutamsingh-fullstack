@@ -1,0 +1,111 @@
+.box_contact {
+  min-height: 500px;
+}
+#contact {
+  background-color: #261402;
+  background-image: url(../../assets/images/map-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+#contact .section-heading {
+  color: #fff;
+}
+#contact .form-group {
+  margin-bottom: 25px;
+}
+#contact .form-group input,
+#contact .form-group textarea {
+  padding: 20px;
+}
+#contact .form-group input.form-control {
+  height: auto;
+}
+#contact .form-group textarea.form-control {
+  height: 248px;
+}
+#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+#contact ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact :-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact ::-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact :-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.team-member img.contactImg {
+  border: 0.5em solid #fff;
+  z-index: 9;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+  border-radius: 100%;
+  outline: 0;
+  background-color: #554306;
+}
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+  background-color: #fed136;
+}
+
+.msgTxt {
+  color: #fed136;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 2px;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+  padding: 10px;
+}
+
+#contact .btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+#contact .btn-primary {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+
+#contact .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.notification-container {
+  width: 400px !important;
+}
+
+@media (min-width: 768px) {
+  .notification-container {
+    right: 35% !important;
+  }
+}

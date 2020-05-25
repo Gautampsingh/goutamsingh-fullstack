@@ -1,0 +1,44 @@
+a.active{
+    border-bottom: 2px solid #ffc107;
+}
+.nav-item{
+    margin: 0;
+}
+
+.nav-item a{
+    padding: 5px 15px;
+    display: flex;
+}
+.logoTxt.active {
+    border-bottom: 2px solid #fff;
+}
+.logoTxt{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1.15em;
+    color: #ffc107 !important;
+    text-decoration: none;
+}
+.logoTxt:hover{
+    text-decoration: none;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-brand{
+    padding: 0px;
+    color: #ffc107 !important;
+    position: relative;
+    top: 4px;
+}
+
+@media (max-width: 990px){
+    a.active{
+        border-bottom: 0px;
+        background-color: #e7c355;
+    }    
+}

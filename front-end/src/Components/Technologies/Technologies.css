@@ -1,0 +1,23 @@
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.team-member img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+@media (max-width: 736px){
+    .team-member img{
+        width: 8em;
+        height: 8em;
+    }
+}
+
+@media (max-width: 500px){
+    .team-member img{
+        width: 7em;
+        height: 7em;
+    }
+}
