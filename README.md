@@ -1,4 +1,4 @@
-# Goutam singh official website
+# Goutam singh official website - React
 Technologies used: HTML5, CSS, REACT(version 16.6.0)
 
 Libraries used: @fortawesome, axios, bootstrap, react-bootstrap, react-notifications, react-scroll, react-skylight
