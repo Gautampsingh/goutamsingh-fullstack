@@ -21,10 +21,11 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
+      username: "",
       email: "",
       phone: "",
       message: "",
+      date: new Date(),
       loading: false,
     };
     this.handleChange = this.handleChange.bind(this);
@@ -36,20 +37,20 @@ class Contact extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const { name, email, phone, message } = this.state;
+    const { username, email, phone, message, date } = this.state;
     this.setState({ loading: true });
 
-    axios({
-      method: "POST",
-      url: "http://localhost:3002/send",
-      data: {
-        name: name,
-        email: email,
-        phone: phone,
-        message: message,
-      },
-    }).then((response) => {
-      if (response.data.msg === "success") {
+    const user = {
+      username: username,
+      email: email,
+      phone: phone,
+      message: message,
+      date: date,
+    };
+    console.log(user);
+    axios.post("http://localhost:5000/users/add", user).then((response) => {
+      console.log(response.data);
+      if (response.statusText === "OK") {
         this.setState({ loading: false });
         // alert("Message Sent.");
         NotificationManager.success(
@@ -66,6 +67,7 @@ class Contact extends Component {
           "",
           toastNotify.timer
         );
+        this.resetForm();
       }
     });
   }
@@ -178,7 +180,7 @@ class Contact extends Component {
                       <div className="form-group">
                         <input
                           type="text"
-                          name="name"
+                          name="username"
                           className="form-control"
                           id="name"
                           placeholder="Your Name *"
