@@ -3,7 +3,7 @@ Technologies used: HTML5, CSS, REACT(version 16.6.0)
 
 Libraries used: @fortawesome, axios, bootstrap, react-bootstrap, react-notifications, react-scroll, react-skylight
 
-[Goutamsingh.com](https://goutamsingh.com/react) designed & developed by Goutam singh.
+[Goutamsingh.com](https://goutamsingh.com) designed & developed by Goutam singh.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
