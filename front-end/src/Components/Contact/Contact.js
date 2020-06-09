@@ -16,6 +16,7 @@ import {
   NotificationManager,
 } from "react-notifications";
 import toastNotify from "../../constants/messages";
+import resumePDF from "../../assets/resume_pdf.pdf";
 
 class Contact extends Component {
   constructor(props) {
@@ -159,6 +160,16 @@ class Contact extends Component {
                       </a>
                     </li>
                   </ul>
+                  <div className="text-muted">
+                    <a
+                      rel="noopener noreferrer"
+                      href={resumePDF}
+                      className="viewResume"
+                      target="_blank"
+                    >
+                      CV as PDF
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

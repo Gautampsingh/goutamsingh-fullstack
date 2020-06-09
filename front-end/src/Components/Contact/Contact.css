@@ -104,6 +104,22 @@ ul.social-buttons li a:hover {
   width: 400px !important;
 }
 
+.viewResume {
+  display: inline-block;
+  background-color: #261402;
+  border: 1px solid #ffc107;
+  padding: 5px;
+  top: 20px;
+  position: relative;
+  min-width: 15em;
+  text-decoration: none;
+  color: #bcc4ca;
+}
+.viewResume:hover {
+  text-decoration: none;
+  color: #bcc4ca;
+}
+
 @media (min-width: 768px) {
   .notification-container {
     right: 35% !important;
